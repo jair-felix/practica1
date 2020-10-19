@@ -1,0 +1,56 @@
+@model formulario.Models.formulario
+
+
+
+
+@{
+    ViewData["Title"] = "Hecho por Alarcon Loayza, Jair Felix";
+}
+
+<div class="text-center">
+    <h1 class="display-4">Formulario de solicitud de Bono</h1>
+    <form asp-controller="formulario" asp-action="ingresar">
+            
+            <label>Nombre</label>
+            <input asp-for="nombre"/>
+            <br/>
+
+            <label>Apellido</label>
+            <input asp-for="apellido"/>
+            <br/>
+
+            <label>Distrito</label>
+            <input asp-for="distrito"/>
+            <br/>
+
+            <label>Banco</label>
+            <select asp-for="banco">
+                <option value="A">Banco A</option>
+                <option value="B">Banco B</option>
+                <option value="C">Banco C</option>
+                <option value="D">Banco D</option>
+            </select>
+            <br/>
+            
+            <label>Edad</label>
+            <input asp-for="edad"/>
+            <br/>
+
+            <label>Genero</label>
+            <input asp-for="genero"/>
+            <br/>
+
+            <label>Autor</label>
+            <input asp-for="autor"/>
+            <br/>
+
+            <input type="submit" value="enviar"/>
+    </form>
+    
+    
+    
+    
+    <td>@Html.DisplayNameFor(model => model.Respuesta)</td>
+    <td>@Html.DisplayTextFor(model => model.Respuesta)</td>
+
+</div>
