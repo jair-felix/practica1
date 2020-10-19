@@ -1,1 +1,1 @@
-# practica1
+ s e # La practica 1 
