@@ -2,8 +2,10 @@ using System;
 using System.ComponentModel.DataAnnotations;
 
 
-namespace formulario.Models
+namespace practica1.Models
 {
+
+    [Table("t_formulario")]
     public class formulario
     {   
         
@@ -21,10 +23,9 @@ namespace formulario.Models
 
         public String genero { get; set; }
 
-        public String autor { get; set; }
+        public String autor { get ; set ; }
 
-        [Display(Name="Output")]
-        public int Respuesta { get; set; }
+        
 
     }
 }
