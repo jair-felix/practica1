@@ -15,7 +15,7 @@ namespace formulario.Models
 
         public String distrito { get; set; }
 
-        public String Banco { get; set; }
+        public String banco { get; set; }
 
         public int edad { get; set; }
 
